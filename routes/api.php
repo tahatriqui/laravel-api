@@ -22,3 +22,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/product',[ProductController::class, 'index'] );
 Route::get('/show/{id}',[ProductController::class, 'show'] );
 Route::post('/product',[ProductController::class, 'store'] );
+Route::post('/product/{id}',[ProductController::class, 'update'] );
